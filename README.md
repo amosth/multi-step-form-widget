@@ -1,4 +1,4 @@
-# remax-widget
+# multi-step-form-widget
 
 ## Project setup
 ```

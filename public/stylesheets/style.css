@@ -1,0 +1,215 @@
+.step-form-section > * {
+	margin: 30px 0;
+}
+
+.hidden {
+	display: none;
+}
+
+.input-wrapper {
+	display: flex;
+	flex-direction: column;
+	color: #000000;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	place-items: center;
+	width: 100%;
+}
+
+.row .question {
+	text-align: left;
+}
+
+.row > #address-div, .row > #email-div {
+	width: 100%;
+}
+
+.row:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.question span {
+	font-weight: 700;
+}
+
+.question p {
+	margin: 0;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.input-div input {
+	height: 40px;
+	padding: 0 18px;
+	width: 100%;
+	box-sizing: border-box;
+	border: none;
+	background-color: #F8F8F8;
+	text-align: left;
+	font-size: 14px;
+	font-weight: 700;
+	outline: none;
+}
+
+.input-div input:focus {
+	outline: 4px auto #DC1C2E;
+	outline-offset: -2px;
+}
+
+.input-div input::placeholder, .input-div .radio-label {
+	font-weight: 700;
+	color: #BBBBBB;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	display: none;
+}
+
+.radio-group > .input-div {
+	width: 48%;
+}
+
+.row .radio-group {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.input-div .radio-label {
+	display: flex;
+	place-items: center;
+	place-content: center;
+	height: 40px;
+	padding: 0 4px;
+	font-size: 14px;
+	box-sizing: border-box;
+	border: solid 1px transparent;
+	background-color: #F8F8F8;
+	cursor: pointer;
+	transition: all .4s ease;
+}
+
+.input-div .radio-label:hover {
+	color: #DC1C2E;
+	border: solid 1px #DC1C2E;
+	background-color: #FFFFFF;
+}
+
+input[type="radio"]:checked + .radio-label, input[type="radio"]:checked + .radio-label:hover {
+	color: #FFFFFF;
+	border: solid 1px #DC1C2E;
+	background-color: #DC1C2E;
+	transition: all .4s ease;
+}
+
+.input-div a {
+	padding: 0 4px;
+	color: #000000;
+	transition: all .4s ease;
+}
+
+.input-div a:hover {
+	opacity: .5;
+}
+
+.input-div .checkbox-label {
+	display: flex;
+	flex-direction: row;
+	place-items: center;
+	position: relative;
+	height: 20px;
+	font-size: 14px;
+	padding-left: 28px;
+	user-select: none;
+	cursor: pointer;
+}
+
+.checkbox-label input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 18px;
+	width: 18px;
+	border: solid 1px transparent;
+	background-color: #F8F8F8;
+	transition: all .4s ease;
+}
+
+.checkbox-label:hover input ~ .checkmark {
+	border: solid 1px #DC1C2E;
+	background-color: #FFFFFF;
+}
+
+.checkbox-label input:checked ~ .checkmark {
+	background-color: #DC1C2E;
+}
+
+.checkmark:before {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.checkbox-label input:checked ~ .checkmark:before {
+	display: block;
+}
+
+.checkbox-label .checkmark:before {
+	left: 5px;
+	top: 1px;
+	width: 5px;
+	height: 10px;
+	border: solid #FFFFFF;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+#example-report {
+	display: flex;
+	flex-direction: row;
+	place-items: center;
+	justify-content: center;
+	height: 50px;
+	width: 280px;
+	color: #003DA5;
+	border: solid 1px #003DA5;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all .4s ease;
+}
+
+#example-report svg {
+	margin-right: 10px;
+	width: 24px;
+	height: 24px;
+	fill: #003DA5;
+	transition: all .4s ease;
+}
+
+#example-report:hover {
+	color: #FFFFFF;
+	background-color: #003DA5;
+}
+
+#example-report:hover svg {
+	fill: #FFFFFF;
+}

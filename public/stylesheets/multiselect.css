@@ -1,0 +1,156 @@
+
+.multiselect .multiselect__tags {
+	display: flex;
+	width: 100%;
+	height: auto;
+	min-height: auto;
+	border: none;
+	padding: 0;
+	background-color: transparent;
+	border-radius: 0;
+	color: #000;
+	font-size: .88889rem;
+	line-height: 1;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.multiselect .multiselect__tags>span {
+	display: flex;
+	align-items: center;
+	width: 100%
+}
+
+.multiselect .multiselect__tags-wrap {
+	position: relative;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	flex: 1 0 100%
+}
+
+.multiselect .multiselect__tags-wrap:after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 8px;
+	background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), #f8f8f8)
+}
+
+.multiselect .multiselect__placeholder {
+	color: #BBBBBB;
+	letter-spacing: .1em;
+	margin: 0
+}
+
+.multiselect .multiselect__tag {
+	margin: 0 4px 0 0;
+	padding: 4px 20px 4px 8px;
+	background-color: #DC1C2E;
+	font-size: .66667rem;
+	flex: 0 0 auto
+}
+
+.multiselect .multiselect__tag-icon:hover {
+	background-color: #003da5
+}
+
+.multiselect .multiselect__tag-icon:after {
+	color: #fff
+}
+
+.multiselect .multiselect__input,
+.multiselect .multiselect__single {
+	display: flex;
+	align-items: center;
+	min-height: auto;
+	margin: 0;
+	padding: 0;
+	font-size: .88889rem;
+	line-height: 1;
+	border-radius: 0;
+	background-color: transparent;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+.multiselect .multiselect__content-wrapper {
+	top: 100%;
+	left: 0;
+	border: none;
+	border-top: 1px solid #cbcbcb;
+	margin: 0;
+	padding: 0;
+	border-radius: 0;
+	background: #fff
+}
+
+.multiselect .multiselect__content {
+	width: 100%
+}
+
+.multiselect.multiselect--above .multiselect__content-wrapper {
+	top: auto;
+	border-top: none;
+	border-bottom: 1px solid #cbcbcb
+}
+
+.multiselect .multiselect__element {
+	cursor: default
+}
+
+.multiselect .multiselect__option {
+	color: #000;
+	line-height: 1;
+	font-weight: 700;
+	text-transform: uppercase
+}
+
+.multiselect .combo-box__option,
+.multiselect .multiselect__optionvalue {
+	flex: 1 0 100%;
+	max-width: 100%;
+	padding: 12px;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+
+.multiselect .multiselect__option--highlight {
+	color: #fff;
+	background-color: #003da5
+}
+
+.multiselect .multiselect__option--selected {
+	color: #fff;
+	background-color: #DC1C2E;
+	cursor: default
+}
+
+.multiselect .multiselect__option--selected.multiselect__option--highlight {
+	background-color: #DC1C2E;
+	cursor: default
+}
+
+.multiselect .multiselect__option--group {
+	color: #595955 !important;
+	pointer-events: none;
+	font-weight: 700;
+	font-size: .8em
+}
+
+.multiselect .multiselect__option--group .combo-box__option {
+	padding: 8px
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #DC1C2E;
+    transition: background-color .35s;
+}
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}

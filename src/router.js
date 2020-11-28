@@ -1,0 +1,22 @@
+import Vue from 'vue';
+import Router from 'vue-router';
+import Form from './components/Form.vue';
+import Report from './components/Report.vue';
+
+Vue.use(Router);
+
+export default new Router({
+	routes: [
+		{ 
+			path: '/', 
+			name: 'Form', 
+			component: Form 
+		},
+		{ 
+			path: '/report', 
+			name: 'Report', 
+			component: Report 
+		}
+	],
+	mode: 'history'
+});

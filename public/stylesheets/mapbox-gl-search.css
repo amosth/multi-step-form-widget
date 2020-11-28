@@ -1,0 +1,34 @@
+.mapboxgl-ctrl-top-left, .mapboxgl-ctrl-top-right {
+	width: 100%;
+}
+
+.mapboxgl-ctrl-top-left .mapboxgl-ctrl {
+    margin: 0;
+    float: left
+}
+
+.mapboxgl-ctrl-top-right .mapboxgl-ctrl {
+    margin: 0;
+    float: right
+}
+
+.mapboxgl-ctrl-top-left .mapboxgl-ctrl-group {
+    margin: 10px 0 0 10px;
+    float: left
+}
+
+.mapboxgl-ctrl-top-right .mapboxgl-ctrl-group {
+    margin: 10px 10px 0 0;
+    float: right
+}
+
+@media screen and (min-width: 640px) {
+
+    .mapboxgl-ctrl-top-right .mapboxgl-ctrl-geocoder {
+        width: 60%;
+        font-size: 15px;
+        line-height: 20px;
+        position: absolute;
+        margin: 6px;
+	}
+}
